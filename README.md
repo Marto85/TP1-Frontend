@@ -1,4 +1,4 @@
-# TP1 Frontend - Talento Evolutivo
+# TP1 Frontend Grupal
 
 ## Descripción del proyecto
 
@@ -40,13 +40,12 @@ La propuesta busca combinar diseño moderno, interacción simple y un estilo vis
 ### Imágenes y avatares
 
 - Los avatares fueron generados con **Gemini** a partir de referencias de imágenes reales de los integrantes.
-- Prompt utilizado para las ilustraciones: "Generar un avatar digital profesional y amigable, inspirado en una foto real de estudiante de programación, con fondo oscuro y acentos azul cian, para un portfolio de equipo frontend." 
-- Nota importante: actualmente los avatares de los integrantes 1, 2 y 3 están pendientes de finalización y se muestran con un recurso provisional mientras se completan sus versiones individuales.
+- Prompt utilizado para las ilustraciones: "Generar un avatar digital profesional y amigable, inspirado en una foto real, para un portfolio de equipo frontend." 
+
 
 ## Estado actual y notas
 
 - El proyecto está funcional como interface de presentación del equipo.
-- Queda pendiente completar los avatares de los tres primeros integrantes y ajustar sus datos personales en las tarjetas.
 - El desarrollo se realizó con foco en mantener la autoría del grupo, usando IA como asistente técnico y creativo.
 
 ## Cómo ejecutar
