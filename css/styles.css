@@ -133,6 +133,7 @@ body {
     border-radius: 50%;
     border: 3px solid var(--accent);
     margin-bottom: 20px;
+    object-fit: cover
 }
 
 .info-section { text-align: left; margin-top: 20px; }
