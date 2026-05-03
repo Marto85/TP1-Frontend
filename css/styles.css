@@ -220,4 +220,15 @@ body {
 /* Breakpoints */
 @media (max-width: 1200px) { .grid-container { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 900px) { .hero h1 { font-size: 2.5rem; } }
+@media (max-width: 768px) {
+    .bitacora-item {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .bitacora-date {
+        min-width: auto;
+        padding-top: 0;
+    }
+}
 @media (max-width: 400px) { .grid-container { grid-template-columns: 1fr; } .hero h1 { font-size: 1.8rem; } }
