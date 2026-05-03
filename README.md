@@ -86,16 +86,16 @@ TP1-Frontend/
 ## Capturas de Pantalla
 
 **Landing page**  
-![Captura de Perfil Martín](img/screenshot-landing.png)
+![Captura landing](https://raw.githubusercontent.com/Marto85/TP1-Frontend/refs/heads/main/img/screenshot-landing.PNG)
 
 **Landing page - Botón de scroll**  
-![Captura Scroll](/img/screenshot-landing2.PNG)
+![Captura landing](https://raw.githubusercontent.com/Marto85/TP1-Frontend/refs/heads/main/img/screenshot-landing2.PNG)
 
 **Perfil de integrante**  
-![Captura perfil](img/screenshot-perfil.PNG)
+![Captura perfil](https://raw.githubusercontent.com/Marto85/TP1-Frontend/refs/heads/main/img/screenshot-perfil.PNG)
 
 **Bitácora**  
-![Captura bitácora](img/screenshot-bitacora.PNG)
+![Captura bitácora](https://raw.githubusercontent.com/Marto85/TP1-Frontend/refs/heads/main/img/screenshot-bitacora.PNG)
 
 ---
 
