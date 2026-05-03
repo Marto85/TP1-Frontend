@@ -50,7 +50,7 @@ La propuesta busca combinar diseño moderno, interacción simple y un estilo vis
 
 ## Cómo ejecutar
 
-1. Abrir `index.html` en el navegador.
+1. Abrir `index.html` en el navegador con liveServer.
 2. Navegar por las tarjetas de integrantes para ver cada perfil.
 3. El botón "Descubrir Equipo" realiza scroll suave hacia la sección de miembros.
 
