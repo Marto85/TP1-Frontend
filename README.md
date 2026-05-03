@@ -1,110 +1,146 @@
-# TP1 Frontend Grupal
+# DevTeam — TP1 Frontend Grupal
 
-## Descripción del proyecto
-
-Este es un trabajo práctico de la materia de Front End que presenta un sitio web estático de equipo.
-La página muestra un landing page con un equipo de desarrolladores, tarjetas de integrantes y perfiles individuales.
-La propuesta busca combinar diseño moderno, interacción simple y un estilo visual oscuro con acentos en azul.
-
-## Estructura del proyecto
-
-- `index.html`: página principal con la introducción del equipo y acceso a los perfiles.
-- `integrante1.html`, `integrante2.html`, `integrante3.html`, `integrante4.html`: páginas de perfil individuales.
-- `css/styles.css`: estilos generales, diseño de tarjetas, responsive y temas de color.
-- `js/main.js`: interacción de botón para scroll suave y efecto de estado.
-- `js/layout.js`: carga dinámica del menú de navegación en todas las páginas.
-- `img/`: carpeta con avatares e imágenes del proyecto.
-
-## Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Fuentes de Google Fonts (`Lexend`)
-
-## Funciones implementadas (qué hacen y dónde están)
-
-### 1) `toggleProfile()`
-
-- **Archivo:** `js/cards.js`
-- **Qué hace:** alterna entre la vista de **Perfil** (habilidades) y la vista de **Intereses** en cada tarjeta de integrante.
-- **Cómo funciona:**
-  - Oculta o muestra `#perfil-section` y `#intereses-section`.
-  - Cambia el texto del botón entre **"Ver Intereses"** y **"Ver Perfil"**.
-- **Dónde se usa:** páginas de integrantes (`integrante1.html`, `integrante2.html`, `integrante3.html`, `integrante4.html`), en la sección de perfil dentro de `.info-section` mediante el botón `#btn-toggle-info`.
-
-### 2) Inicialización de navegación (`DOMContentLoaded` en `layout.js`)
-
-- **Archivo:** `js/layout.js`
-- **Qué hace:** construye dinámicamente la barra de navegación común del sitio.
-- **Cómo funciona:**
-  - Inserta el HTML del menú dentro de `#navbar-container`.
-  - Crea enlaces a **Inicio** y **Bitácora**.
-  - Detecta la ruta actual y marca el link activo (`.active`).
-- **Dónde se usa:** en todas las páginas que incluyen `<header id="navbar-container"></header>`.
-
-### 3) Interacción del botón principal (`DOMContentLoaded` en `main.js`)
-
-- **Archivo:** `js/main.js`
-- **Qué hace:** gestiona la interacción del botón de la hero en la landing.
-- **Cómo funciona:**
-  - Escucha click sobre `#btn-interaccion`.
-  - Hace scroll suave hacia `#integrantes`.
-  - Cambia temporalmente el texto del botón a **"Explorando..."** y luego vuelve a **"Descubrir Equipo"**.
-- **Dónde se usa:** `index.html`, sección hero (botón principal) y sección de integrantes.
-
-### 4) Efecto 3D sobre el avatar (`avatar-effects.js`)
-
-- **Archivo:** `js/avatar-effects.js`
-- **Qué hace:** aplica una rotación 3D dinámica a la foto de perfil según la posición del mouse.
-- **Cómo funciona:**
-  - Selecciona `.profile-img` y agrega perspectiva al contenedor padre.
-  - Escucha `mousemove` en el documento y calcula la rotación en X e Y en base a la distancia del cursor al centro del avatar.
-  - Al salir el mouse de la pantalla (`mouseleave`), vuelve suavemente a la posición original.
-- **Dónde se usa:** páginas de integrantes que incluyan `<script src="js/avatar-effects.js"></script>`.
-
-### 5) Botón flotante "Subir" (`main.js`)
-
-- **Archivo:** `js/main.js`
-- **Qué hace:** agrega un botón flotante para volver al inicio de la página.
-- **Cómo funciona:**
-  - Crea dinámicamente el botón `#btn-scroll-top` y lo agrega al `body`.
-  - Muestra u oculta el botón según el desplazamiento vertical (scrollY > 220).
-  - Al hacer click, ejecuta `window.scrollTo({ top: 0, behavior: 'smooth' })`.
-- **Dónde se usa:** en todas las páginas que cargan `js/main.js` (actualmente `index.html` y `bitacora.html`).
-
-## Uso de inteligencia artificial en el proyecto
-
-### Herramientas y modelos
-
-- **ChatGPT**: utilizado como asistente para escribir contenido, mejorar la redacción, dar forma al README y revisar la lógica general del sitio.
-- **Gemini**: utilizado para generar los avatares basados en imágenes reales de los integrantes y para apoyar la creación de prompts visuales.
-- **CLI Copilot**: empleado como ayuda de autocompletado de código durante el desarrollo del HTML y JavaScript.
-- **Gemini Code Assist**: consultado para corregir y mejorar estilos CSS, encontrar mejores prácticas en diseño responsivo y ajustar variables de color.
-
-### Uso en contenido y código
-
-- ChatGPT ayudó a traducir las ideas del grupo en un texto profesional y natural, respetando el tono de un trabajo práctico para la materia.
-- Copilot CLI contribuyó a acelerar la escritura de funciones simples y estructuras HTML, evitando errores comunes de sintaxis.
-- Gemini Code Assist sirvió para optimizar selectores CSS, mejorar el comportamiento responsive y validar pequeños ajustes visuales.
-
-### Imágenes y avatares
-
-- Los avatares fueron generados con **Gemini** a partir de referencias de imágenes reales de los integrantes.
-- Prompt utilizado para las ilustraciones: "Generar un avatar digital profesional y amigable, inspirado en una foto real, para un portfolio de equipo frontend." 
-
-
-## Estado actual y notas
-
-- El proyecto está funcional como interface de presentación del equipo.
-- El desarrollo se realizó con foco en mantener la autoría del grupo, usando IA como asistente técnico y creativo.
-
-## Cómo ejecutar
-
-1. Abrir `index.html` en el navegador con liveServer.
-2. Navegar por las tarjetas de integrantes para ver cada perfil.
-3. El botón "Descubrir Equipo" realiza scroll suave hacia la sección de miembros.
+<!-- 🔴 REEMPLAZAR: agregar el link de deploy cuando esté disponible -->
+🔗 **Deploy:** _pendiente_
 
 ---
 
-Este README fue preparado para explicar el proyecto y el rol que tuvo la IA en el proceso de desarrollo, manteniendo un lenguaje claro, profesional y orientado a la presentación académica.
+## Descripción del Proyecto
+
+Sitio web estático de presentación de equipo, desarrollado como trabajo práctico de la materia de Front End (3er año — Tecnicatura en Desarrollo de Software). El objetivo es construir una landing page con tarjetas de integrantes, perfiles individuales con interacción JavaScript, y una bitácora del proceso de desarrollo. Incluye navegación dinámica, efectos visuales, diseño responsive y toggle de contenido animado.
+
+---
+
+## Integrantes
+
+| Nombre | GitHub |
+|---|---|
+| Martín Juan | [@Marto85](https://github.com/Marto85) |
+| Gastón Zampar | [@zamparg](https://github.com/zamparg) |
+| Adrián Madroñal | [@MaverickARG](https://github.com/MaverickARG) |
+| Santiago Cuda | [@SantiCuda](https://github.com/SantiCuda) |
+
+---
+
+## Tecnologías Utilizadas
+
+- **HTML5** — estructura semántica de todas las páginas
+- **CSS3** — estilos, variables de color, animaciones con `@keyframes`, diseño responsive con media queries
+- **JavaScript (ES6)** — interacción, DOM dinámico, animaciones controladas por eventos
+- **[Google Fonts — Lexend](https://fonts.google.com/specimen/Lexend)** — tipografía principal
+- **SVG** — favicon propio generado sin dependencias externas
+
+---
+
+## Estructura de Archivos
+
+```
+TP1-Frontend/
+├── index.html              # Landing page principal
+├── integrante1.html        # Perfil Martín
+├── integrante2.html        # Perfil Martín (2do integrante)
+├── integrante3.html        # Perfil Gastón
+├── integrante4.html        # Perfil Adrián
+├── bitacora.html           # Bitácora del proyecto
+├── css/
+│   └── styles.css          # Estilos globales, variables, animaciones, responsive
+├── js/
+│   ├── main.js             # Interacción hero, botón scroll-top
+│   ├── layout.js           # Navbar dinámico compartido
+│   ├── cards.js            # Toggle Perfil/Intereses con animación bounce
+│   └── avatar-effects.js   # Efecto 3D hover sobre avatar
+└── img/
+    ├── favicon.svg         # Favicon DT del equipo
+    └── avatar-*.png        # Avatares de cada integrante
+```
+
+---
+
+## Guía de Estilos
+
+### Paleta de Colores
+
+| Rol | Variable CSS | Hexadecimal |
+|---|---|---|
+| Fondo principal | `--bg-dark` | `#0f172a` |
+| Fondo de cards | `--bg-card` | `#1e293b` |
+| Acento / Links | `--accent` | `#38bdf8` |
+| Texto principal | `--text-main` | `#f1f5f9` |
+| Texto secundario | `--text-dim` | `#94a3b8` |
+| Navbar blur | `--nav-blur` | `rgba(15, 23, 42, 0.8)` |
+
+### Tipografía
+
+- **Lexend** — usada para títulos y cuerpo de texto  
+  → [Ver en Google Fonts](https://fonts.google.com/specimen/Lexend)  
+  Pesos utilizados: `300` (light), `400` / `500` (regular), `600` / `700` (bold)
+
+### Iconografía y Avatares
+
+- No se utiliza ninguna librería de íconos externa.
+- El **favicon** es un SVG propio con las iniciales **DT** del equipo.
+- Los **avatares** fueron generados con **Gemini AI** a partir de referencias fotográficas reales de los integrantes, preservando su privacidad al no publicar imágenes reales.
+
+---
+
+## Capturas de Pantalla
+
+<!-- 🔴 REEMPLAZAR: guardar capturas en img/ y actualizar los paths -->
+
+**Landing page**  
+![Captura landing](img/screenshot-landing.png)
+
+**Landing page - Botón de scroll**  
+![Captura landing](img/screenshot-landing2.png)
+
+
+**Perfil de integrante**  
+![Captura perfil](img/screenshot-perfil.png)
+
+**Bitácora**  
+![Captura bitácora](img/screenshot-bitacora.png)
+
+---
+
+## Funciones Implementadas
+
+### 1) `toggleProfile()` — `js/cards.js`
+Alterna entre la vista de **Perfil** (habilidades) y **Intereses** en cada página de integrante. Al hacer click, la card sube con una animación `slideOutUp`, se swapea el contenido y vuelve con `bounceInUp`. Usada en `integrante1-4.html` mediante el botón `#btn-toggle-info`.
+
+### 2) Navbar dinámico — `js/layout.js`
+Inyecta el HTML del menú de navegación en `#navbar-container`, compartido por todas las páginas. Marca el link activo según la URL actual.
+
+### 3) Interacción hero — `js/main.js`
+Escucha click en `#btn-interaccion`, hace scroll suave hacia `#integrantes` y muestra un efecto de texto temporal. Usado en `index.html`.
+
+### 4) Botón flotante "Subir" — `js/main.js`
+Crea dinámicamente un botón fijo en pantalla que aparece al descender más de 220px y vuelve al inicio con `scrollTo({ behavior: 'smooth' })`. Disponible en todas las páginas con `main.js`.
+
+### 5) Efecto 3D en avatar — `js/avatar-effects.js`
+Aplica rotación 3D dinámica (`rotateX` / `rotateY`) sobre `.profile-img` en función de la posición del cursor. Al salir el mouse, vuelve suavemente a su posición original.
+
+---
+
+## Uso de Inteligencia Artificial
+
+| Herramienta | Uso |
+|---|---|
+| **ChatGPT** | Redacción de contenido, README y revisión de lógica general |
+| **GitHub Copilot** | Autocompletado de código HTML y JavaScript |
+| **Gemini** | Generación de avatares a partir de fotos reales de los integrantes |
+| **Gemini Code Assist** | Optimización de CSS, responsive y variables de color |
+
+Los avatares fueron generados con el siguiente prompt: *"Generar un avatar digital profesional y amigable, inspirado en una foto real, para un portfolio de equipo frontend."*
+
+---
+
+## Cómo Ejecutar
+
+1. Clonar o descargar el repositorio.
+2. Abrir `index.html` con **Live Server** en VS Code (o cualquier servidor local).
+3. Navegar por las cards de integrantes para ver cada perfil.
+4. El botón **"Descubrir Equipo"** hace scroll suave hacia la sección de miembros.
+
+---
+
+_Trabajo Práctico N°1 — Materia: Frontend — Tecnicatura en Desarrollo de Software_
