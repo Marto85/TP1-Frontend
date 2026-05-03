@@ -14,12 +14,102 @@
     <header class="hero">
         <div class="hero-content">
             <h1 id="team-name">Bitácora</h1>
-            <p>Proximamente...</p>
         </div>
     </header>
 
     <main class="container">
-   
+        <section id="bitacora">
+
+            <h2 class="section-title">Decisiones de Diseño</h2>
+            <div class="bitacora-list">
+                <div class="bitacora-item">
+                    <span class="bitacora-date">29 Abr 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Tipografía: Lexend</h3>
+                        <p>Se eligió Lexend como fuente principal por su alta legibilidad en pantalla y su perfil moderno y neutral, coherente con la identidad del equipo.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">29 Abr 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Layout de cards en grid</h3>
+                        <p>Se optó por un grid de cuatro columnas para la landing, permitiendo escalar el equipo sin modificar el markup.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">29 Abr 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Navbar generado dinámicamente</h3>
+                        <p>El header de navegación se inyecta vía <code>layout.js</code> para mantener un único punto de control y evitar duplicación de código HTML entre páginas.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Favicon SVG con identidad "DT"</h3>
+                        <p>Se diseñó un favicon SVG propio con las iniciales del equipo (DT) sobre fondo oscuro con bordes redondeados, evitando dependencias externas.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Separación Perfil / Intereses</h3>
+                        <p>Se decidió dividir el contenido de cada integrante en dos vistas — habilidades profesionales e intereses personales — accesibles mediante un botón toggle, mejorando la organización y la experiencia de navegación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Dificultades y Soluciones</h2>
+            <div class="bitacora-list">
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Toggle que no switcheaba contenido</h3>
+                        <p>La función original de <code>cards.js</code> solo modificaba el color del borde de la tarjeta, sin ocultar ni mostrar secciones. Se reescribió completamente para controlar la visibilidad de <code>#perfil-section</code> e <code>#intereses-section</code>.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Caracteres especiales en HTML</h3>
+                        <p>El operador <code>&amp;</code> en texto plano dentro de atributos y contenido generaba warnings de validación. Se reemplazó por la entidad <code>&amp;amp;</code> en los casos correspondientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Cambios Importantes</h2>
+            <div class="bitacora-list">
+                <div class="bitacora-item">
+                    <span class="bitacora-date">29 Abr 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Creación de la estructura del proyecto</h3>
+                        <p>Se establece la arquitectura base: <code>index.html</code>, páginas de perfil por integrante, carpetas <code>css/</code>, <code>js/</code> e <code>img/</code>. Se elimina un archivo sobrante del scaffolding inicial.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">30 Abr 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Incorporación de perfiles e imágenes</h3>
+                        <p>Se agregan los avatares de cada integrante, se ajusta el CSS de tarjetas.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Favicon y títulos unificados</h3>
+                        <p>Se agrega el favicon SVG a todos los archivos HTML y se estandarizan los títulos con el prefijo <code>DevTeam -</code> para consistencia en pestañas y marcadores.</p>
+                    </div>
+                </div>
+                <div class="bitacora-item">
+                    <span class="bitacora-date">02 May 2026</span>
+                    <div class="bitacora-body">
+                        <h3>Implementación del toggle Perfil / Intereses</h3>
+                        <p>Se reestructuran los cuatro perfiles para separar habilidades e intereses en bloques independientes. Se reescribe <code>cards.js</code> para manejar la alternancia de vistas y el texto del botón de forma dinámica.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <script src="js/layout.js"></script>
