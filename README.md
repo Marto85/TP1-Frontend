@@ -85,8 +85,6 @@ TP1-Frontend/
 
 ## Capturas de Pantalla
 
-<!-- 🔴 REEMPLAZAR: guardar capturas en img/ y actualizar los paths -->
-
 **Landing page**  
 ![Captura landing](img/screenshot-landing.png)
 
