@@ -53,7 +53,17 @@ La propuesta busca combinar diseño moderno, interacción simple y un estilo vis
   - Cambia temporalmente el texto del botón a **"Explorando..."** y luego vuelve a **"Descubrir Equipo"**.
 - **Dónde se usa:** `index.html`, sección hero (botón principal) y sección de integrantes.
 
-### 4) Botón flotante "Subir" (`main.js`)
+### 4) Efecto 3D sobre el avatar (`avatar-effects.js`)
+
+- **Archivo:** `js/avatar-effects.js`
+- **Qué hace:** aplica una rotación 3D dinámica a la foto de perfil según la posición del mouse.
+- **Cómo funciona:**
+  - Selecciona `.profile-img` y agrega perspectiva al contenedor padre.
+  - Escucha `mousemove` en el documento y calcula la rotación en X e Y en base a la distancia del cursor al centro del avatar.
+  - Al salir el mouse de la pantalla (`mouseleave`), vuelve suavemente a la posición original.
+- **Dónde se usa:** páginas de integrantes que incluyan `<script src="js/avatar-effects.js"></script>`.
+
+### 5) Botón flotante "Subir" (`main.js`)
 
 - **Archivo:** `js/main.js`
 - **Qué hace:** agrega un botón flotante para volver al inicio de la página.
