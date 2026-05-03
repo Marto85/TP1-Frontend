@@ -22,6 +22,47 @@ La propuesta busca combinar diseño moderno, interacción simple y un estilo vis
 - JavaScript
 - Fuentes de Google Fonts (`Lexend`)
 
+## Funciones implementadas (qué hacen y dónde están)
+
+### 1) `toggleProfile()`
+
+- **Archivo:** `js/cards.js`
+- **Qué hace:** alterna entre la vista de **Perfil** (habilidades) y la vista de **Intereses** en cada tarjeta de integrante.
+- **Cómo funciona:**
+  - Oculta o muestra `#perfil-section` y `#intereses-section`.
+  - Cambia el texto del botón entre **"Ver Intereses"** y **"Ver Perfil"**.
+- **Dónde se usa:** páginas de integrantes (`integrante1.html`, `integrante2.html`, `integrante3.html`, `integrante4.html`), en la sección de perfil dentro de `.info-section` mediante el botón `#btn-toggle-info`.
+
+### 2) Inicialización de navegación (`DOMContentLoaded` en `layout.js`)
+
+- **Archivo:** `js/layout.js`
+- **Qué hace:** construye dinámicamente la barra de navegación común del sitio.
+- **Cómo funciona:**
+  - Inserta el HTML del menú dentro de `#navbar-container`.
+  - Crea enlaces a **Inicio** y **Bitácora**.
+  - Detecta la ruta actual y marca el link activo (`.active`).
+- **Dónde se usa:** en todas las páginas que incluyen `<header id="navbar-container"></header>`.
+
+### 3) Interacción del botón principal (`DOMContentLoaded` en `main.js`)
+
+- **Archivo:** `js/main.js`
+- **Qué hace:** gestiona la interacción del botón de la hero en la landing.
+- **Cómo funciona:**
+  - Escucha click sobre `#btn-interaccion`.
+  - Hace scroll suave hacia `#integrantes`.
+  - Cambia temporalmente el texto del botón a **"Explorando..."** y luego vuelve a **"Descubrir Equipo"**.
+- **Dónde se usa:** `index.html`, sección hero (botón principal) y sección de integrantes.
+
+### 4) Botón flotante "Subir" (`main.js`)
+
+- **Archivo:** `js/main.js`
+- **Qué hace:** agrega un botón flotante para volver al inicio de la página.
+- **Cómo funciona:**
+  - Crea dinámicamente el botón `#btn-scroll-top` y lo agrega al `body`.
+  - Muestra u oculta el botón según el desplazamiento vertical (scrollY > 220).
+  - Al hacer click, ejecuta `window.scrollTo({ top: 0, behavior: 'smooth' })`.
+- **Dónde se usa:** en todas las páginas que cargan `js/main.js` (actualmente `index.html` y `bitacora.html`).
+
 ## Uso de inteligencia artificial en el proyecto
 
 ### Herramientas y modelos
