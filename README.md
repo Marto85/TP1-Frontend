@@ -1,6 +1,5 @@
 # DevTeam — TP1 Frontend Grupal
 
-<!-- 🔴 REEMPLAZAR: agregar el link de deploy cuando esté disponible -->
 🔗 **[Deploy](https://tp-1-frontend-tawny.vercel.app)** 
 
 ---
